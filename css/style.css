@@ -1,19 +1,150 @@
-:root { --silver: #eeeeee; --line: rgba(245,245,245,.68); --black: #000; }
-* { box-sizing: border-box; }
-body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--black); color: var(--silver); font-family: Montserrat, sans-serif; }
-.page { min-height: 100svh; position: relative; overflow: hidden; isolation: isolate; display: flex; flex-direction: column; align-items: center; padding: clamp(34px, 5vh, 72px) 24px 38px; }
-.logo { margin-top: clamp(18vh, 28vh, 31vh); font-family: Orbitron, sans-serif; font-size: clamp(5rem, 13vw, 9rem); font-weight: 900; letter-spacing: -.15em; line-height: .78; transform: skewX(-10deg) scaleX(1.1); padding-right: .15em; color: #dedede; text-shadow: 1px 1px #777, -1px -1px #fff, 0 5px 16px rgba(0,0,0,.65); background: linear-gradient(145deg, #fff 0%, #d0d0d0 44%, #929292 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-.intro { margin-top: 40px; text-align: center; }
-.intro h1 { margin: 0; font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
-.intro p { margin: 14px 0 0; color: rgba(238,238,238,.68); font-size: .75rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
-.actions { width: min(100%, 590px); margin-top: clamp(58px, 7vh, 82px); display: grid; gap: 18px; }
-.action { min-height: 88px; border: 1px solid var(--line); border-radius: 10px; display: grid; grid-template-columns: 60px 1fr 36px; align-items: center; padding: 0 28px; color: var(--silver); text-decoration: none; background: rgba(0,0,0,.08); transition: background .25s ease, border-color .25s ease, transform .25s ease; }
-.action:hover { background: rgba(255,255,255,.07); border-color: #fff; transform: translateY(-3px); }
-.icon { width: 32px; height: 32px; display: grid; place-items: center; }
-.icon svg { width: 100%; height: 100%; stroke-width: 2.35; }
-.label { font-size: clamp(.72rem, 1.15vw, .94rem); letter-spacing: .2em; font-weight: 600; white-space: nowrap; }
-.arrow { font-size: 2rem; line-height: .6; font-family: Arial, sans-serif; font-weight: 300; text-align: right; }
-.footer { margin-top: auto; padding-top: 64px; display:flex; align-items:center; gap: 18px; color: rgba(255,255,255,.22); font-family: Orbitron,sans-serif; font-size: .83rem; font-weight:800; letter-spacing:.32em; }
+:root { 
+    --silver: #eeeeee; 
+    --line: rgba(245,245,245,.68); 
+    --black: #000; 
+}
+* { 
+    box-sizing: border-box; 
+}
+body { 
+    margin: 0; 
+    min-width: 320px; 
+    min-height: 100vh; 
+    background: var(--black); 
+    color: var(--silver); 
+    font-family: Montserrat, sans-serif; 
+}
+.page { 
+    min-height: 100svh; 
+    position: relative; 
+    overflow: hidden; 
+    isolation: isolate; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: clamp(34px, 5vh, 72px) 24px 38px; 
+}
+.logo { 
+    margin-top: clamp(18vh, 28vh, 31vh); 
+    font-family: Silkscreen, sans-serif; 
+    font-size: clamp(5rem, 13vw, 9rem); 
+    font-weight: 600; 
+    letter-spacing: -.23em; 
+    line-height: .78; 
+    transform: skewX(-10deg); 
+    padding-right: .15em; 
+    color: #dedede; 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+}
+.intro { 
+    margin-top: 40px; 
+    text-align: center; 
+}
+.intro h1 { 
+    margin: 0; 
+    font-size: clamp(1rem, 2vw, 1.35rem); 
+    font-weight: 600; 
+    letter-spacing: .16em; 
+    text-transform: uppercase; 
+}
+.intro p { 
+    margin: 14px 0 0; 
+    color: rgba(238,238,238,.68); 
+    font-size: .75rem; 
+    font-weight: 600; 
+    letter-spacing: .22em; 
+    text-transform: uppercase; 
+}
+.actions { 
+    width: min(100%, 590px); 
+    margin-top: clamp(58px, 7vh, 82px); 
+    display: grid; 
+    gap: 18px; 
+}
+.action-insta, .action-wpp { 
+    min-height: 88px; 
+    border: 1px solid var(--line); 
+    border-radius: 10px; 
+    display: grid; 
+    grid-template-columns: 60px 1fr 36px; 
+    align-items: center; 
+    padding: 0 28px; 
+    color: var(--silver); 
+    text-decoration: none; 
+    background: rgba(0,0,0,.08); 
+    transition: background .25s ease, border-color .25s ease, transform .25s ease; 
+}
+.action-wpp:hover { 
+    background: rgba(4, 243, 44, 0.589); 
+    border-color: #fff; 
+    transform: translateY(-3px); 
+}
+.action-insta:hover { 
+    background: rgba(243, 4, 211, 0.589); 
+    border-color: #fff; 
+    transform: translateY(-3px); 
+}
+.icon { 
+    width: 32px; 
+    height: 32px; 
+    display: grid; 
+    place-items: center; 
+}
+.icon svg { 
+    width: 100%; 
+    height: 100%; 
+    stroke-width: 2.35; 
+}
+.label { 
+    font-size: clamp(.72rem, 1.15vw, .94rem);
+    letter-spacing: .2em; 
+    font-weight: 600; 
+    white-space: nowrap; 
+}
+.arrow { 
+    font-size: 2rem; 
+    line-height: .6; 
+    font-family: Arial, sans-serif; 
+    font-weight: 300; 
+    text-align: right; 
+}
+.footer { 
+    margin-top: auto; 
+    padding-top: 64px; 
+    display:flex; 
+    align-items:center; 
+    gap: 18px; 
+    color: rgba(255,255,255,.22); 
+    font-family: Silkscreen,sans-serif; 
+    font-size: .83rem; 
+    font-weight:800; 
+    letter-spacing:.32em; 
+    font-weight: 600; 
+}
 .footer::before, .footer::after { content:""; display:block; width:112px; height:1px; background: currentColor; }
-@media (max-width: 560px) { .page { padding-inline: 18px; } .logo { margin-top: 24vh; font-size: 4.6rem; } .intro { margin-top: 28px; } .intro h1 { font-size: .8rem; } .intro p { font-size: .62rem; } .actions { margin-top: 54px; gap: 14px; } .action { min-height: 72px; grid-template-columns: 48px 1fr 28px; padding: 0 18px; border-radius: 8px; } .icon { width: 28px; height: 28px; } .label { letter-spacing: .14em; font-size: .65rem; } .arrow { font-size: 1.65rem; } .footer::before,.footer::after { width: 58px; } }
+@media (max-width: 560px) { 
+    
+.page 
+{ padding-inline: 18px; } 
+.logo 
+{ margin-top: 24vh; font-size: 4.6rem; } 
+.intro 
+{ margin-top: 28px; } 
+.intro h1 
+{ font-size: .8rem; } 
+.intro p 
+{ font-size: .62rem; } 
+.actions 
+{ margin-top: 54px; gap: 14px; } 
+.action 
+{ min-height: 72px; grid-template-columns: 48px 1fr 28px; padding: 0 18px; border-radius: 8px; } 
+.icon 
+{ width: 28px; height: 28px; } 
+.label 
+{ letter-spacing: .14em; font-size: .65rem; } 
+.arrow 
+{ font-size: 1.65rem; } 
+.footer::before,.footer::after 
+{ width: 58px; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
