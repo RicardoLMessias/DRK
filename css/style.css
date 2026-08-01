@@ -22,10 +22,10 @@ body {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    padding: clamp(34px, 5vh, 72px) 24px 38px; 
+    padding: clamp(24px, 5vh, 22px) 24px 28px; 
 }
 .logo { 
-    margin-top: clamp(18vh, 28vh, 31vh); 
+    margin-top: clamp(18vh, 28vh, 11vh); 
     font-family: Silkscreen, sans-serif; 
     font-size: clamp(5rem, 13vw, 9rem); 
     font-weight: 600; 
@@ -63,9 +63,9 @@ body {
     gap: 18px; 
 }
 .action-insta, .action-wpp { 
-    min-height: 88px; 
+    min-height: 58px; 
     border: 1px solid var(--line); 
-    border-radius: 10px; 
+    border-radius: 13px; 
     display: grid; 
     grid-template-columns: 60px 1fr 36px; 
     align-items: center; 
@@ -75,6 +75,7 @@ body {
     background: rgba(0,0,0,.08); 
     transition: background .25s ease, border-color .25s ease, transform .25s ease; 
 }
+
 .action-wpp:hover { 
     background: rgba(4, 243, 44, 0.589); 
     border-color: #fff; 
@@ -84,6 +85,11 @@ body {
     background: rgba(243, 4, 211, 0.589); 
     border-color: #fff; 
     transform: translateY(-3px); 
+}
+
+.action-insta:hover .arrow, 
+.action-wpp:hover .arrow{
+    transform: translateX(10px);
 }
 .icon { 
     width: 32px; 
@@ -107,8 +113,10 @@ body {
     line-height: .6; 
     font-family: Arial, sans-serif; 
     font-weight: 300; 
-    text-align: right; 
+    text-align: right;
+    transition: .3s;
 }
+
 .footer { 
     margin-top: auto; 
     padding-top: 64px; 
