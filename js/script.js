@@ -4,8 +4,8 @@ window.addEventListener('load', () => {
   gsap.set(['.logo', '.intro', '.actions', '.footer'], { autoAlpha: 0 });
 
   gsap.timeline({ defaults: { ease: 'power2.out' } })
-    .to('.logo', { autoAlpha: 1, duration: .9 })
-    .to('.intro', { autoAlpha: 1, duration: .6 }, '-=.3')
-    .to('.actions', { autoAlpha: 1, duration: .8 }, '-=.2')
-    .to('.footer', { autoAlpha: 1, duration: .6 }, '-=.35');
+    .to('.logo', { autoAlpha: 1, duration: 1.9 })
+    .to('.intro', { autoAlpha: 1, duration: 1.6 }, '-=.3')
+    .to('.actions', { autoAlpha: 1, duration: 1.8 }, '-=.2')
+    .to('.footer', { autoAlpha: 1, duration: 1.6 }, '-=.35');
 });
